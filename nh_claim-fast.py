@@ -149,6 +149,7 @@ def login(session, username, password):
     data = {
         USER_NAME: username,
         PASS_NAME: password,
+        'txtfrom': '',
     }
 
     r = session.post(LOGIN_URL, data=data)
